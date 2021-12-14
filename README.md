@@ -11,10 +11,13 @@ _Parameter_ : **query**
 
 ```python
 import request
-url = https://apicell.anon-c0der.repl.co/pypi-search/
+url = 'https://apicell.anon-c0der.repl.co/pypi-search/'
 data = {'query' : 'numpy'}
 
 post_req = requests.post(url, data=data)
+json_res = post_req.json()
 
+for url in json_res:
+    print(url['url'])
 
 ```
