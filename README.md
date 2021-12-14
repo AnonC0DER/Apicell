@@ -2,9 +2,9 @@
 
 ## You can use this api to search in google, bing, pypi and subscene and get results
 <br>
-_Method_ : **POST**
+Method : POST
 <br>
-_Parameter_ : **query**
+Parameter : query
 
 
 ### Example
@@ -19,5 +19,4 @@ json_res = post_req.json()
 
 for url in json_res:
     print(url['url'])
-
 ```
