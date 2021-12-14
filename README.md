@@ -11,7 +11,7 @@ Parameter : query
 
 ```python
 import request
-url = 'https://apicell.anon-c0der.repl.co/pypi-search/'
+url = 'http://127.0.0.1:8000/pypi-search/'
 data = {'query' : 'numpy'}
 
 post_req = requests.post(url, data=data)
